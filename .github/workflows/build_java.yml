@@ -9,4 +9,4 @@ jobs:
       - name: Check Java Status
         run: |
           echo "Java version"
-          echo ${{ GITHUB_REPOSITORY }}
+          echo ${{ git.event_name }}
