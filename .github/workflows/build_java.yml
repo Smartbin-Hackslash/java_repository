@@ -6,7 +6,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+            path: main
       - name: Check Java Status
         run: |
           echo "Java version"
-          echo ${{ git.event_name }}
+          echo "ok"
