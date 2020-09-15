@@ -7,6 +7,7 @@
 
     <target name="jar">
         <mkdir dir="./build/jar"/>
+        <echo>building jar files!</echo>
         <jar destfile="build/jar/first.jar" basedir="./build/classes">
             <manifest>
                 <attribute name="Main-Class" value="first"/>
@@ -15,7 +16,8 @@
     </target>
 
     <target name="run">
-        <java jar="./build/jar/HelloWorld.jar" fork="true"/>
+        <java jar="./build/jar/first.jar" fork="true"/>
+        <echo>running jar files!</echo>
     </target>
 
 </project>
