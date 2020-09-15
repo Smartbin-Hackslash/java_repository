@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="scripts" default="compile" >
 <target name="compile">
-<javac srcdir="./scripts" destdir="./build"  />
+<javac srcdir="./scripts" destdir="./scripts/build"  />
 <echo>compilation complete!</echo>
 </target>
 </project>
