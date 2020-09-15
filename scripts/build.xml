@@ -1,25 +1,7 @@
 <?xml version="1.0"?>
-<project>
-
-    <target name="compile">
-        <mkdir dir="./build/classes"/>
-        <javac srcdir="./" />
-            <echo>compiling jar files!</echo>
-    </target>
-
-    <target name="jar">
-        <mkdir dir="./build/jar"/>
-        <echo>building jar files!</echo>
-        <jar destfile="build/jar/first.jar" basedir="./build/classes">
-            <manifest>
-                <attribute name="Main-Class" value="first"/>
-            </manifest>
-        </jar>
-    </target>
-
-    <target name="run">
-        <java jar="./build/jar/first.jar" fork="true"/>
-        <echo>running jar files!</echo>
-    </target>
-
+<project name="scripts" default="compile" >
+<target name="compile">
+<javac srcdir="./" />
+<echo>compilation complete!</echo>
+</target>
 </project>
