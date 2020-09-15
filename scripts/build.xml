@@ -3,6 +3,7 @@
     <target name="compile">
         <mkdir dir="./build/classes"/>
         <javac srcdir="./" destdir="./build/classes"/>
+            <echo>compiling jar files!</echo>
     </target>
 
     <target name="jar">
